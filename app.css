@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #3d405b;
+    color: #f4f1de;
+}
+
+#lists {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    width: 90%;
+    
+}
+
+#lists > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1rem;
+    border: 1px solid #f2cc8f;
+    width: 30%;
+}
+
+.directional {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #f2cc8f;
+    margin: 1rem;
+}
+
+.clickable {
+    background-color: #e07a5f;
+    border: 1px solid #e07a5f;
+    transition: background-color .1s;
+}
+
+.person-container {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person {
+    border: 1px solid #f2cc8f;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    transition: background-color .1s;
+}
+
+.selected {
+    background-color: #e07a5f;
+}
+
+.clickable:hover, .person:hover {
+    cursor: pointer;
+    background-color: #be6850;
+}
+
+.clickable:active, .person:active {
+    background-color: #93503d;
+    outline: none;
+}
+
+#lists > div > h2 {
+    align-self: center;
+}
+
+.person-container .person:not(:first-child) {
+    border-top: 0px;
+}
