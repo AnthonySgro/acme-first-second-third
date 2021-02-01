@@ -1,8 +1,3 @@
-const anthony = document.getElementById('anthony');
-const tom = document.getElementById('anthony');
-const tamanna = document.getElementById('anthony');
-const nava = document.getElementById('anthony');
-
 const people = document.getElementsByClassName('person');
 
 const rightCarrots = document.getElementsByClassName('right-carrot');
